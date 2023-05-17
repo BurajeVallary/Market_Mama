@@ -16,7 +16,8 @@
 :root{
 --bg-color:rgb(#FFFFAD);
 --text-color:#00000;
---main-color:#fdfd29;
+
+/* --main-color:#fdfd29; */
 
 }
 
@@ -32,7 +33,7 @@ header{
    width: 100%;
    top: 0;
    right: 0; 
-   z-index: 1000;
+   /* z-index: 1000; */
      display: flex; 
    align-items: center;
    justify-content: space-between;
@@ -76,13 +77,13 @@ header{
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     margin: 0px 20px;
     transition: all .50s ease;
 } 
 
 .navbar a:hover{
-     color: var(--main-color);
+     color:#024c02,#000;
 }
 .navbar a :active{
     color: var(--main-color); 
@@ -108,7 +109,8 @@ ul{
 .footer{
     background-color: #24262b;
     padding:70px 0 ;
-    /* margin-top: 600px; */
+    margin-top: -50px;
+  
 }
 .footer-col{
     width: 25%;
@@ -247,8 +249,12 @@ ul{
  .heading h1{
      font-size: 50px;
      color: #000;
-      margin-bottom: 35px; 
+      margin-bottom: 20px; 
      position: relative;
+ }
+ .heading h3{
+    font-size: 25px;
+    font-weight: lighter;
  }
  .heading h1::after{
      content: "";
@@ -315,7 +321,7 @@ ul{
      font-size: 19px;
      text-decoration: none;
       border-radius: 25px; 
-     margin-top: 15px;
+     margin-top: -200px;
      transition: 0.3s ease;
  }
  .about-content .read-more:hover{
@@ -325,6 +331,21 @@ ul{
 
  .Social-links{
     width: 150px;
+    color: #ffffff;
+ }
+ .bxl-facebook{
+    color: white;
+  
+ }
+
+ .bxl-whatsapp{
+    color: white;
+  
+ }
+
+ .bxs-phone-call{
+    color: white;
+  
  }
  @media screen and (max-width:768px){
      .heading{
@@ -372,21 +393,31 @@ ul{
     min-height: 60vh; 
     background-color:#FFFFAD; 
     padding: 50px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
  } 
  .wrapper{
    /* background: wheat; */
   width:600px ;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   padding: 5px;
   box-shadow: 10px 1px 10px rgba(0, 0, 0, 0,4); 
 } 
 
-h1{
-    text-align: center;
-    font-size: xx-large;
-    margin-left: 100px;
+ .wrapper h1{
     
+    font-size: 50px;
+    margin-left: 500px;
+    
+}
+.wrapper h1::after{
+    content: "";
+    position: absolute;
+    /* width: 100%; */
+    width: 10%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: aquamarine;
 }
 
 br{
@@ -408,7 +439,7 @@ br{
 }
 h4,p{
     text-align: center;
-    font-size: 12px;
+    font-size: 19px;
     margin: 7px;
 } 
 
@@ -471,11 +502,13 @@ h4,p{
 }
 
 .horizontal-snap img {
-  width: 600px;
+   width: 600px;
   height: 500px;
   max-width: none;
   object-fit: contain;
-  border-radius: 2rem;
+  border-radius: 2rem; 
+
 }
+
 
  
