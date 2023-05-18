@@ -510,5 +510,30 @@ h4,p{
 
 }
 
+/* footer */
 
+@media screen and (min-width: 768px) {
+    .footer-col {
+      width: 25%;
+      padding: 0 15px;
+    }
+  }
+  
+  /* Styles for screens smaller than 768px */
+  @media screen and (max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      padding: 0 10px;
+    }
+  }
+  
+  /* Styles for screens smaller than 480px */
+  @media screen and (max-width: 479px) {
+    .footer-col {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+  
  
